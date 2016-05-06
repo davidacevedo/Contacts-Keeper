@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-// import NavBar from '../../components/NavBar/index.js';
+import NavBar from 'components/NavBar';
+import SearchBar from 'components/SearchBar';
+import ContactsTable from 'components/ContactsTable'
 
-export class App extends Component {
+export default class App extends Component {
 	render() {
 		return (
-			<h1>Hello there</h1>
+			<div>
+				<NavBar></NavBar>
+				<SearchBar></SearchBar>
+				<ContactsTable></ContactsTable>
+			</div>
 		);
 	}
 }
