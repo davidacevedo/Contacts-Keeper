@@ -10,10 +10,12 @@ module.exports = {
 		path: __dirname + '/public',
 		filename: "bundle.js"
 	},
+
 	resolve: {
 		extensions: ['', '.jsx', '.js', '.json', '.scss'],
 		modulesDirectories: ['node_modules', PATHS.app],
 	},
+
 	module: {
 		loaders: [
 			{
@@ -22,6 +24,9 @@ module.exports = {
 				query: {
 					presets: ['react', 'es2015']
 				}
+			}, {
+				test: /\.scss?$/,
+				loader: 'style!css?localIdentName=[path][name]--[local]!postcss-loader!sass',
 			}
 		]
 	}
