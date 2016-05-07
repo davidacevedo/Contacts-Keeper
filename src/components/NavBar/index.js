@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import { styles } from './styles.scss';
+
 export default class NavBar extends Component {
 	render() {
 		return (
-			<div className='NavBar'>
+      <div className={`${styles}`}>
 				<ul>
-					<li>Contacts Keeper</li>
+					<li><a>Contacts Keeper</a></li>
 				</ul>
 			</div>
 		)

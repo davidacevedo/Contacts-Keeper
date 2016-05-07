@@ -1,5 +1,5 @@
 (function(document) {
-  function addScript(path, attrs) {
+  function addScript(path) {
     var element = document.createElement('script');
     element.type = 'text/javascript';
     element.src = path;

@@ -4,7 +4,10 @@ export default class SearchBar extends Component {
     render() {
         return (
             <div className='SearchBar'>
-                <h1>I am the search bar</h1>
+                <form>
+                    <input type="text" name="FirstName" value="Mickey"></input>
+                    <input type="submit" value="Submit"></input>
+                </form>
             </div>
         )
     }

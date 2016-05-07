@@ -1,5 +1,21 @@
 :local(.styles) {
-  h1 {
-    color: blue;
+  table {
+    width:80%;
+  }
+
+  tr:nth-child(1) {
+    td {
+      background-color: #676767;
+      color: white;
+    }
+  }
+
+  td {
+    padding: 14px 16px;
+  }
+
+  table, th, td {
+    border: 1px solid #EAEAEA;
+    border-collapse: collapse;
   }
 }
