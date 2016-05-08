@@ -15,7 +15,7 @@ export default class ContactsTable extends Component {
 
   render() {
     return (
-      <tr>
+      <tr onClick={() => {console.log('hello')}}>
         <td>{this.props.firstName}</td>
         <td>{this.props.lastName}</td>
         <td>{this.props.dateOfBirth}</td>
