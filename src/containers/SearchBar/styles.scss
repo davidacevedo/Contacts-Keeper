@@ -1,0 +1,29 @@
+:local(.styles) {
+  .search-form .form-group {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left !important;
+    width: 30%;
+    height: 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 4px 25px 25px 4px;
+    border: 1px solid #ccc;
+  }
+  .search-form .form-group input.form-control {
+    padding-right: 20px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display:block;
+  }
+
+  .search-form .form-group span.form-control-feedback {
+    top: -2px;
+    right: -1px;
+    color: #3596e0;
+
+  }
+
+}
