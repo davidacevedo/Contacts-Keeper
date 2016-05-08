@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 
+import { styles } from './styles.scss';
+
+import AddContact from 'containers/AddContact';
+
 export default class AddContactButton extends Component {
   render() {
     return (
-      <div>
-        <button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Contact</button>
+      <div className={`${styles}`}>
+        <button type="button" className="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Add Contact</button>
           <div className="modal fade" id="myModal" role="dialog">
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="modal-header">
                   <button type="button" className="close" data-dismiss="modal">&times;</button>
-                  <h4 className="modal-title">Modal Header</h4>
+                  <h4 className="modal-title">Add Contact</h4>
                 </div>
                 <div className="modal-body">
-                  <p>Some text in the modal.</p>
+                  <AddContact />
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
