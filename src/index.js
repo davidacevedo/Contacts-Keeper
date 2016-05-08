@@ -5,13 +5,18 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import todoApp from './reducers'
-import App from 'containers/App'
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
 
-let store = createStore(todoApp)
+let store = createStore(todoApp);
+
+export const history = browserHistory;
 
 render(
   <Provider store={store}>
-    <App />
+    <Router history={history}>
+      {routes}
+    </Router>
   </Provider>,
   document.getElementById('root')
 );
