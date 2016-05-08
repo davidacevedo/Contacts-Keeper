@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import NavBar from 'components/NavBar';
-import SearchBar from 'components/SearchBar';
-import ContactsTable from 'components/ContactsTable'
+import AddContact from 'containers/AddContact';
+// import ContactsTable from 'components/ContactsTable';
+import VisibleContacts from 'containers/VisibleContacts';
+import AddContactButton from 'components/AddContactButton';
 
 export default class App extends Component {
 	render() {
 		return (
 			<div>
 				<NavBar></NavBar>
-				<SearchBar></SearchBar>
-				<ContactsTable></ContactsTable>
+				<AddContactButton></AddContactButton>
+				<AddContact></AddContact>
+				<VisibleContacts></VisibleContacts>
 			</div>
 		);
 	}

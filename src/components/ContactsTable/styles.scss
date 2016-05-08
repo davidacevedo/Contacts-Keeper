@@ -1,16 +1,11 @@
 :local(.styles) {
   table {
-    width:80%;
+    width:100%;
   }
 
-  tr:nth-child(1) {
-    td {
-      background-color: #676767;
-      color: white;
-    }
-  }
-
-  td {
+  th {
+    background-color: #676767;
+    color: white;
     padding: 14px 16px;
   }
 

@@ -1,30 +1,42 @@
 import React, { Component } from 'react';
+import Contact from 'components/Contact'
 
 import { styles } from './styles.scss';
 
 export default class ContactsTable extends Component {
-    render() {
-        return (
-            <div className={`${styles}`}>
-                <table>
-                    <tr>
-                        <td>First Name</td>
-                        <td>Last Name</td>
-                        <td>Date of Birth</td>
-                        <td>Phone</td>
-                        <td>Email</td>
-                        <td>Notes</td>
-                    </tr>
-                    <tr>
-                        <td>David</td>
-                        <td>Acevedo</td>
-                        <td>11/14/1994</td>
-                        <td>5625476811</td>
-                        <td>david.acevedo07@gmail.com</td>
-                        <td>He's a construction worker</td>
-                    </tr>
-                </table>
-            </div>
-        )
-    }
+  static propTypes = {
+    contacts: React.PropTypes.array,
+  };
+
+  render() {
+    return (
+      <div className={`${styles}`}>
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Date of Birth</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.props.contacts.map(contact =>
+              <Contact
+                key={contact.id}
+                firstName={contact.firstName}
+                lastName={contact.lastName}
+                dateOfBirth={contact.dateOfBirth}
+                phone={contact.phone}
+                email={contact.email}
+                notes={contact.notes}
+              />
+            )}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
 }
