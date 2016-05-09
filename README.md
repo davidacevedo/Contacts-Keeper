@@ -1,8 +1,26 @@
 Contacts-Keeper
 ===============
 
-## Link
-- 
+## Overview
+
+Features implemented:
+
+- Ability to add a contact from the add contact button
+- Ability to filter the table by first names through the search input
+
+How to use:
+
+- In order to add a contact you will have to press the add contact button
+and fill out the entire form with notes being optional. You can also
+check the box to have the firstname as the only required field
+- In order to search, you will have to type in the letters you want to
+look for in the first name of the contact
+
+Not Implemented:
+
+- Ability to modify contact
+- Ability to choose your search criteria
+- No test coverage
 
 ## Table of Contents
 
