@@ -13,10 +13,27 @@ export class AddContact extends Component {
     let phone;
     let email;
     let notes;
+    let check;
+
+
     return (
       <div className={`${styles}`}>
         <form className="form-horizontal" role="form" onSubmit={e => {
           e.preventDefault();
+          let values = [firstName, lastName, dateOfBirth, phone, email];
+
+          // Only check if first name exists
+          if(check.checked == true) {
+            if (!firstName.value.trim()) {
+              return
+            }}
+            else {
+              for(let i = 0; i < values.length; i++) {
+                if(!values[i].value.trim()) {
+                  return;
+                }
+              }
+            }
 
           this.props.addContact({
             firstName: firstName.value,
@@ -83,7 +100,16 @@ export class AddContact extends Component {
               }}/>
             </div>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <div className="form-group">
+            <label className="control-label col-sm-3" for="notes">Only First Name?</label>
+            <div className="col-sm-9">
+              <input type="checkbox" id="checkbox" placeholder="Enter Notes" ref={node => {
+                check = node
+              }}/>
+            </div>
+          </div>
+
+          <button type="submit" className="btn btn-default">Submit</button>
         </form>
       </div>
     )

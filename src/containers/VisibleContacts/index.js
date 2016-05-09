@@ -11,7 +11,7 @@ const getVisibleContacts = (contacts, filter) => {
     case 'SHOW_ALL':
       return contacts;
     case 'FILTER_FIRST_NAME':
-      return _.filter(contacts, function(o) {return _.includes(o.firstName, filter.filter)});
+      return _.filter(contacts, function(o) {return _.includes(o.firstName.toLowerCase(), filter.filter.toLowerCase())});
     default:
       return contacts;
   }

@@ -14,6 +14,7 @@ const common = {
   devtool: 'cheap-module-eval-source-map',
 
   entry: [
+    'babel-polyfill',
     PATHS.app,
     'webpack-hot-middleware/client',
     './src/index'
@@ -47,11 +48,6 @@ const common = {
   },
 
   plugins: [
-    new webpack.ProvidePlugin({
-      Promise: 'imports?this=>global!exports?global.Promise!es6-promise',
-      fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch',
-    }),
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
 };
