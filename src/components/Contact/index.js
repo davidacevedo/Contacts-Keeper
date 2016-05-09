@@ -15,7 +15,7 @@ export default class ContactsTable extends Component {
 
   render() {
     return (
-      <tr onClick={() => {console.log('Stubbed to implement delete')}}>
+      <tr className={`${styles}`} onClick={() => {console.log('Stubbed to implement delete')}}>
         <td>{this.props.firstName}</td>
         <td>{this.props.lastName}</td>
         <td>{this.props.dateOfBirth}</td>
