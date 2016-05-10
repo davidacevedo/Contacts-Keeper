@@ -13,13 +13,14 @@ How to use:
 - In order to add a contact you will have to press the add contact button
 and fill out the entire form with notes being optional. You can also
 check the box to have the firstname as the only required field
+- In order to delete a contact you have to click on the contact row
 - In order to search, you will have to type in the letters you want to
 look for in the first name of the contact
+- In order to switch filters you have to click on the drop down
 
 Not Implemented:
 
 - Ability to modify contact
-- Ability to choose your search criteria
 - No test coverage
 
 ## Table of Contents

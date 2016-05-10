@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Contact from 'components/Contact'
+import Contact from 'containers/Contact'
 import { connect } from 'react-redux'
 import _ from 'lodash';
 
@@ -29,6 +29,7 @@ export default class ContactsTable extends Component {
           {this.props.contacts.map(contact =>
             <Contact
               key={contact.id}
+              id={contact.id}
               firstName={contact.firstName}
               lastName={contact.lastName}
               dateOfBirth={contact.dateOfBirth}
