@@ -25,6 +25,10 @@
     display:block;
   }
 
+  input.form-control {
+    width: 100%;
+  }
+
   .search-form .form-group span.form-control-feedback {
     top: -2px;
     right: -1px;
