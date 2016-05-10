@@ -5,14 +5,14 @@ import AddContactButton from 'components/AddContactButton';
 import SearchBar from 'containers/SearchBar';
 
 export default class App extends Component {
-	render() {
-		return (
+  render() {
+    return (
 			<div>
-				<NavBar />
-				<SearchBar />
-				<AddContactButton />
-				<VisibleContacts />
-			</div>
-		);
-	}
+        <NavBar />
+        <SearchBar />
+        <AddContactButton />
+        <VisibleContacts />
+      </div>
+    );
+  }
 }
