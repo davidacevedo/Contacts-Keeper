@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from 'components/NavBar';
-import VisibleContacts from 'containers/VisibleContacts';
+import VisibleContactsTable from 'containers/VisibleContactsTable';
 import AddContactButton from 'components/AddContactButton';
 import SearchBar from 'containers/SearchBar';
 
@@ -11,7 +11,7 @@ export default class App extends Component {
         <NavBar />
         <SearchBar />
         <AddContactButton />
-        <VisibleContacts />
+        <VisibleContactsTable />
       </div>
     );
   }
