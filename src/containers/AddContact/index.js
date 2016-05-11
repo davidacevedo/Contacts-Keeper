@@ -17,7 +17,7 @@ export class AddContact extends Component {
 
 
     return (
-      <div className={`${styles}`}>
+      <div className='add-contact-form'>
         <form className="form-horizontal" role="form" onSubmit={e => {
           e.preventDefault();
           let values = [firstName, lastName, dateOfBirth, phone, email];

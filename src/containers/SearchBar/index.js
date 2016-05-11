@@ -20,7 +20,7 @@ export class SearchBar extends Component {
   render() {
     this.state = 'FILTER_FIRST_NAME';
     return (
-      <div className={`${styles}`}>
+      <div className='search-bar'>
         <form action="" className="search-form form-inline" onSubmit={e => {
           e.preventDefault();
         }}>

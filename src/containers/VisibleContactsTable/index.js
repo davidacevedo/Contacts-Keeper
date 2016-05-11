@@ -13,7 +13,7 @@ export default class ContactsTable extends Component {
 
   render() {
     return (
-      <div className={`${styles}`}>
+      <div className='contacts-table'>
         <table>
           <thead>
           <tr>

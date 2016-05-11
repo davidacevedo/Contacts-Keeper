@@ -23,7 +23,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <tr className={`${styles}`} onClick={this.handleClick.bind(this)}>
+      <tr className='contact-row' onClick={this.handleClick.bind(this)}>
         <td>{this.props.firstName}</td>
         <td>{this.props.lastName}</td>
         <td>{this.props.dateOfBirth}</td>
