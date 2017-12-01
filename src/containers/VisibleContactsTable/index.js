@@ -6,7 +6,7 @@ import _ from 'lodash';
 
 import { styles } from './styles.scss';
 
-export default class ContactsTable extends Component {
+export class ContactsTable extends Component {
   static propTypes = {
     contacts: React.PropTypes.array,
   };
