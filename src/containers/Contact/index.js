@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 
 
-export default class Contact extends Component {
+export class Contact extends Component {
   static propTypes = {
     firstName: React.PropTypes.string,
     lastName: React.PropTypes.string,
